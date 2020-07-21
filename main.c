@@ -18,6 +18,21 @@ static void foo(struct schedule * S, void *ud) {
 	}
 }
 
+
+
+//添加注释
+
+
+
+
+void ldd(){
+	
+	int a=0;
+	int b=0;
+	int c=0;
+	
+	
+}
 static void test(struct schedule *S) {
 	struct args arg1 = {0};
 	struct args arg2 = {100};
