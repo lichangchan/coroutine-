@@ -17,6 +17,21 @@ static void foo(struct schedule * S, void *ud) {
 		coroutine_yield(S);
 	}
 }
+/*
+static void foo(struct schedule * S, void *ud) {
+	struct args * arg = ud;
+	int start = arg->n;
+	int i;
+	for (i=0;i<5;i++) {
+		printf("coroutine %d : %d\n",coroutine_running(S) , start + i);
+		// 切出当前协程
+		coroutine_yield(S);
+	}
+}
+
+*/
+
+
 
 
 
